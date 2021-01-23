@@ -1,0 +1,1190 @@
+/* This is done to reset all things to 0 */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Setting the body font, color & line height */
+body {
+  font-family: 'Ubuntu Condensed', sans-serif;
+  color: brown;
+  line-height: 1.6;
+}
+
+ul {
+  list-style-type: none;
+}
+/* Link decorations: removing the line underneath and setting the color */
+a {
+  text-decoration: none;
+  color: #333;
+}
+/* Styling headers */
+h1, h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0;
+}
+/* styling paragraphs */
+ p {
+   margin: 10px 0;
+ }
+/* setting image to be seen fully, later adjusted by container */
+ img {
+   width: 100%;
+ }
+ .text-center {
+  text-align: center;
+}
+
+.bg-dark {
+  background-color: brown;
+  color: gold;
+}
+
+.bg-light {
+  background-color: gold;
+  color: brown;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+.bg-white {
+  background-color: white;
+  color: black;
+}
+
+.mtop {
+  margin-top: 10px;
+}
+
+.mbottom {
+  margin-bottom: 30px;
+}
+
+.colwhite {
+  color: white;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0;
+}
+
+.newcontainer {
+  max-height: 200px;
+}
+
+.container .containerdescription{
+  max-width: 500px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+.flex {
+  display: flex;
+  /* This would change the direction of the flex as colum and so the links would be under Graphic Desing, flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
+  padding: 0px;
+  margin: 20px;
+  color: gold;
+  height: 550px;
+}
+
+
+.newcard {
+  border-radius: 5px;
+  box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
+  padding: 0px;
+  margin: 20px;
+  color: gold;
+  max-height: 100px;
+}
+
+.newcards {
+  border-radius: 5px;
+  box-shadow: 10px 5px 10px rgba(0,0,0,0.2);
+  padding: 0px 5px;
+  margin: 20px;
+  color: gold;
+  max-height: auto;
+}
+
+
+.newcard p {
+  color: white;
+}
+
+.bor-left {
+  border-left: 3px solid gold;
+}
+
+.bor-right {
+  border-right: 3px solid gold;
+}
+
+.bor-leftblack {
+  border-left: 3px solid black;
+}
+
+.bor-rightwhite {
+  border-right: 3px solid white;
+}
+
+.bor-leftwhite {
+  border-left: 3px solid white;
+}
+
+.bor-rightblack {
+  border-right: 3px solid black;
+}
+
+
+
+
+
+
+
+
+
+/* fade in image and text? */
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imagehorizontal {
+  max-height: 100px;
+}
+
+
+
+
+
+
+
+
+/* Nav Bar */
+.navbar {
+  color: brown;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .flex{
+  justify-content: space-between;
+}
+
+.navbar a {
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 1px solid brown;
+  
+}
+
+.navbar li:hover {
+  transform: translateY(-3px);
+  transition: transform 0.1s ease-in;
+}
+
+
+/* FirstHead */
+
+.firsthead .container {
+  max-height: 150px;
+  width: 550px;
+}
+
+
+.firsthead .card {
+  max-height: 150px;
+  width: 550px;
+  
+  /* border-top: 2px solid brown; */
+  /* border-bottom: 2px solid brown; */
+  /* border-bottom: 1px solid white; */
+}
+
+.firsthead-text {
+  font-style: italic;
+  font-size: large;
+  margin-top: 10px;
+}
+
+/* 
+.designs::before,
+.designs::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+  background: brown;
+  transform: skewY(-2deg);
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+} */
+
+
+
+
+/* Designs */
+
+.designs-text {
+  font-style: italic;
+  font-size: large;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: gold;
+
+
+}
+
+.designs .flex {
+  flex-direction: column;
+  overflow: visible;
+  margin-top: 5px;
+
+
+}
+
+/* .designs .container {
+  overflow: visible;
+  margin-top: -10px;
+} */
+
+
+
+.containerdescription{
+  justify-self: center;
+  margin: auto;
+}
+/* Start of Allways  */
+.designs .allways .always img {
+  width: 600px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.designs .allways .card {
+  margin-top: 20px;
+
+}
+
+.designs h1 {
+  margin-bottom: 20px;
+}
+
+.designs .allways:focus card {
+  transform: scale(1.02;)
+}
+
+.designs .allways .grid {
+  grid-template-columns: 40% 60%;
+}
+
+.designs .allways .flex {
+  grid-template-columns: 30% 70%;
+}
+
+.designs .allways h1 {
+  color: black;
+}
+
+
+.designs .flex > *:first-child {
+  overflow: visible;
+}
+
+.designs .container .alwayscontainer {
+  height: 550px;
+  width: auto;
+  overflow:hidden;
+}
+
+.designs .allways .grid img:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in;
+}
+
+.designs .card .grid .newcard:hover {
+transform: translateY(-15px);
+transition: transform 0.2s ease-in;
+
+}
+
+.designs .card:hover {
+  transform: translateY(-15px);
+  transition: transform 0.2s ease-in;
+  
+}
+
+/* The bottom and the above are used to crop an image after setting a height to the container.  */
+.designs .container .alwayscontainer img {
+  margin-top: -15px;
+  margin-left: -200px;
+  margin-right: -200px;
+}
+.designs .allways .card:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in;
+}
+
+.desings .allways .card:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in;
+}
+
+/* End of Allways */
+
+
+
+/* Balehager section  */
+
+/* The bottom and the above are used to crop an image after setting a height to the container.  */
+.designs .balehager img {
+  width: 900px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.designs .balehager .container .alwayscontainer img {
+  margin-top: 10px;
+  margin-left: -270px;
+  margin-right: 00px;
+  overflow:hidden;
+}
+
+.designs .balehager .card {
+  margin-top: 20px;
+  overflow: hidden;
+
+}
+
+.designs .balehager .grid {
+  grid-template-columns: 60% 40%;
+}
+
+.designs .balehager h1 {
+  color: white;
+}
+
+.designs .balehager p {
+  color: black;
+}
+
+
+.designs .balehager .flex {
+  grid-template-columns: 30% 70%;
+}
+
+.designs .balehager .BCimage2 {
+  overflow: hidden;
+}
+
+.designs .balehager .container .alwayscontainer {
+  height: 550px;
+  width: auto;
+  overflow:hidden;
+}
+
+.designs .balehager img:hover{
+  transform: translateX(15px);
+  transition: transform 0.2s ease-in;
+}
+
+.designs .balehager .card .newcard {
+  height: 10px;
+  overflow: show;
+  
+}
+
+.designs .balehager .card .newcard:hover {
+transform: translateY(-25px);
+transition: transform 0.2s ease-in;
+}
+
+
+.designs .balehager .newcard .newcards:hover {
+  transform: translateY(-15px);
+  transition: transform 0.2s ease-in;
+  overflow: show;
+}
+/* End of Balehager  */
+
+
+
+
+/* Start of eshi */
+
+/* The bottom and the above are used to crop an image after setting a height to the container.  */
+
+.designs .eshi img {
+  width: 900px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.designs .eshi .container .alwayscontainer img {
+  margin-top:20px;
+  margin-left: -70px;
+  margin-right: 00px;
+  overflow: hidden;
+}
+
+
+
+
+.designs .eshi .card {
+  margin-top: 20px;
+  overflow: hidden;
+
+}
+
+.designs .eshi .grid {
+  grid-template-columns: 40% 60%;
+  overflow: hidden;
+}
+
+
+.designs .eshi .flex {
+  grid-template-columns: 30% 70%;
+}
+
+.designs .eshi .BCimage2 {
+  overflow: hidden;
+}
+
+.designs .eshi p {
+  font-size: 16px;
+}
+
+.designs .eshi h1 {
+  color: black
+}
+
+
+.designs .eshi .newcards {
+  width: 375px;
+  margin-left: 10px;
+}
+
+
+
+.designs .eshi .container .alwayscontainer {
+  height: 550px;
+  width: auto;
+  overflow:hidden;
+}
+
+ 
+.designs .eshi img:hover{
+  transform: translateX(-25px);
+  transition: transform 0.2s ease-in;
+}
+
+.designs .eshi .card .newcard:hover {
+transform: translateY(-15px);
+transition: transform 0.2s ease-in;
+}
+
+
+.designs .eshi .newcard .newcards:hover {
+  transform: translateY(-15px);
+  transition: transform 0.2s ease-in;
+  overflow: show;
+}
+/* End of eshi  */
+
+
+
+/* Start of inane */
+/* Insane section  */
+
+
+
+.designs .insane img {
+  width: 900px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.designs .insane .container .alwayscontainer img {
+  margin-top: 10px;
+  margin-left: -90px;
+  margin-right: -100px;
+  overflow:hidden;
+}
+
+
+.designs .insane .card {
+  margin-top: 20px;
+  overflow: hidden;
+
+}
+
+/* The bottom and the above are used to crop an image after setting a height to the container.  */
+
+.designs .insane .newcard {
+  overflow: show;
+
+}
+
+.designs .insane h1 {
+  color: black;
+}
+
+.designs .insane .grid {
+  grid-template-columns: 65% 35%;
+  overflow: hidden;
+}
+
+
+/* .designs .insane .flex {
+  grid-template-columns: 30% 70%;
+} */
+
+/* .designs .insane .BCimage2 {
+  overflow: hidden;
+} */
+
+.designs .insane .container .alwayscontainer {
+  height: 550px;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: auto;
+  overflow: hidden;
+}
+
+ 
+.designs .insane img:hover{
+  transform: translateX(15px);
+  transition: transform 0.2s ease-in;
+}
+
+.designs .insane .card .newcard:hover {
+transform: translateY(-15px);
+transition: transform 0.2s ease-in;
+
+}
+/* End of insane  */
+
+
+/* Start of lunion */
+.designs .lunion img {
+  /* overflow: visible; */
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  /* width: 600px;
+  height: auto; */
+  /* max-width: 1100px; */
+}
+
+/* The bottom and the above are used to crop an image after setting a height to the container.  */
+
+.designs .lunion img {
+  width: 900px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.designs .lunion .container .alwayscontainer img {
+  margin-top:20px;
+  margin-left: -70px;
+  margin-right: 00px;
+  overflow:hidden;
+}
+
+.designs .lunion .card {
+  margin-top: 20px;
+  overflow: hidden;
+
+}
+
+.designs .lunion .grid {
+  grid-template-columns: 40% 60%;
+  overflow: hidden;
+}
+
+
+.designs .lunion .flex {
+  grid-template-columns: 30% 70%;
+}
+
+.designs .lunion .BCimage2 {
+  overflow: hidden;
+}
+
+
+
+.designs .lunion .container .alwayscontainer {
+  height: 550px;
+  width: auto;
+  overflow:hidden;
+}
+
+.designs .lunion h1 {
+  color: black;
+}
+
+ 
+.designs .lunion img:hover{
+  transform: translateX(-25px);
+  transition: transform 0.2s ease-in;
+}
+
+.designs .lunion .card .newcard:hover {
+transform: translateY(-15px);
+transition: transform 0.2s ease-in;
+
+}
+/* End of lunion  */
+
+
+/* Mamaye section  */
+
+
+.designs .mamaye {
+  background-color: #fd8e01;
+}
+
+.designs .mamaye h1 {
+  color: orange
+}
+
+.designs .mamaye p {
+  color: black;
+}
+
+
+
+/* The bottom and the above are used to crop an image after setting a height to the container.  */
+
+.designs .mamaye img {
+  width: auto;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+
+.designs .mamaye .container .alwayscontainer img {
+  margin-top: 10px;
+  margin-left:-100px;
+  margin-right: 00px;
+  overflow:hidden;
+}
+
+.designs .mamaye .card {
+  margin-top: 20px;
+  overflow: hidden;
+
+}
+
+.designs .mamaye .container .grid {
+  grid-template-columns: 60% 40%;
+  overflow: hidden;
+}
+
+
+.designs .mamaye .flex {
+  grid-template-columns: 70% 30%;
+}
+
+.designs .mamaye .BCimage2 {
+  overflow: hidden;
+}
+
+.designs .mamaye .container .alwayscontainer {
+  height: 550px;
+  width: 600px;
+  overflow:hidden;
+}
+
+ 
+.designs .mamaye img:hover{
+  transform: translateX(-15px);
+  transition: transform 0.2s ease-in;
+}
+
+
+
+.designs .mamaye .newcard .newcards:hover {
+  transform: translateY(-15px);
+  transition: transform 0.2s ease-in;
+  overflow: show;
+}
+
+.designs .mamaye .card .newcard:hover {
+transform: translateY(-15px);
+transition: transform 0.2s ease-in;
+
+}
+/* End of mamaye */
+
+/* Start of Radoriginal */
+.designs .Radoriginal img {
+  /* overflow: visible; */
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  /* width: 600px;
+  height: auto; */
+  /* max-width: 1100px; */
+}
+
+/* The bottom and the above are used to crop an image after setting a height to the container.  */
+
+.designs .Radoriginal img {
+  width: 900px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.designs .Radoriginal .container .alwayscontainer img {
+  margin-top:20px;
+  margin-left: -120px;
+  margin-right: 00px;
+  overflow:hidden;
+}
+
+.designs .Radoriginal .card {
+  margin-top: 20px;
+  overflow: hidden;
+
+}
+
+
+.designs .Radoriginal {
+  background-color: black;
+}
+
+
+.designs .Radoriginal h1 {
+  color: black;
+}
+
+
+
+.designs .Radoriginal .grid {
+  grid-template-columns: 40% 60%;
+  overflow: hidden;
+}
+
+
+.designs .Radoriginal .flex {
+  grid-template-columns: 30% 70%;
+}
+
+.designs .Radoriginal .BCimage2 {
+  overflow: hidden;
+}
+
+
+
+.designs .luRadoriginalnion .container .alwayscontainer {
+  height: 550px;
+  width: auto;
+  overflow:hidden;
+}
+
+ 
+.designs .Radoriginal img:hover{
+  transform: translateX(-25px);
+  transition: transform 0.2s ease-in;
+}
+
+.designs .Radoriginal .card .newcard:hover {
+transform: translateY(-15px);
+transition: transform 0.2s ease-in;
+}
+
+
+
+
+.designs .Radoriginal .newcard .newcards:hover {
+  transform: translateY(-15px);
+  transition: transform 0.2s ease-in;
+  }
+/* End of radoriginal  */
+
+/* Start of weandi */
+
+
+/* The bottom and the above are used to crop an image after setting a height to the container.  */
+
+
+
+.designs .radroot {
+  margin-top: 20px;
+  overflow: hidden;
+
+}
+
+.designs .radroot .container {
+  overflow: hidden;
+
+}
+
+.designs .radroot img:hover{
+  transform: scale(1.15);
+  transition: transform 0.2s ease-in;
+}
+
+.designs .radroot .card:hover {
+transform: translateY(-15px);
+transition: transform 0.2s ease-in;
+}
+/* End of radroot  */
+
+
+
+
+/* Start of weandi */
+.designs .weandi img {
+  /* overflow: visible; */
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  /* width: 600px;
+  height: auto; */
+  /* max-width: 1100px; */
+}
+
+/* The bottom and the above are used to crop an image after setting a height to the container.  */
+
+.designs .weandi img {
+  width: 850px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -70px;
+  overflow: hidden;
+}
+
+.designs .weandi h1 {
+  color: black;
+}
+
+.designs .weandi .container .alwayscontainer img {
+  margin-top:-140px;
+  margin-left: -110px;
+  margin-right: 00px;
+  margin-bottom: -70px;
+  overflow:hidden;
+}
+
+.designs .weandi .card {
+  margin-top: 20px;
+  overflow: hidden;
+
+}
+
+
+.designs .weandi {
+  background-color: black;
+}
+
+
+.designs .weandi .grid {
+  grid-template-columns: 40% 60%;
+  overflow: hidden;
+}
+
+
+.designs .weandi .flex {
+  grid-template-columns: 30% 70%;
+}
+
+.designs .weandi .BCimage2 {
+  overflow: hidden;
+}
+
+
+
+.designs .weandi .container .alwayscontainer {
+  height: 550px;
+  width: auto;
+  overflow:hidden;
+}
+
+ 
+.designs .weandi img:hover{
+  transform: scale(0.9);
+  transition: transform 0.2s ease-in;
+}
+
+.designs .weandi .card .newcard:hover {
+transform: translateY(-15px);
+transition: transform 0.2s ease-in;
+}
+
+
+.designs .weandi .newcard .newcards:hover {
+  transform: translateY(-15px);
+  transition: transform 0.2s ease-in;
+  overflow: show;
+}
+/* End of weandi  */
+
+
+/* footer  */
+
+.footer {
+  background-color: gold;
+  color: black;
+}
+
+.footer .container {
+  max-height: 200px;
+  color: black;
+}
+
+.footer .container {
+  max-height: 200px;
+  color: black;
+}
+
+.footer .container a {
+  max-height: 200px;
+  color: black;
+}
+
+
+
+
+
+.designs .newcontainer .africa {
+  height: 200px;
+  width: auto;
+  fill: transparent;
+  stroke-width: 1px;
+  stroke: green;
+}
+.designs .container .africa path {
+  fill: transparent;
+  stroke: 20px;
+  stroke: black;
+  stroke-dasharray: 1650px;
+  stroke-dashoffset: 1650px;
+  /* Delete the line below for hover only */
+
+}
+
+.designs .newcontainer .africa:hover path {
+  animation: animate 2s linear forwards;
+}
+.designs .newcontainer .africa:hover polygon {
+  animation: animate 2s linear forwards;
+}
+@keyframes animate {
+  to {
+      stroke-dashoffset: 0;
+      fill: red
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.line{
+    border: 1px solid gold;
+    display: block;
+}
+
+
+.BCimage2 {
+    width: 1000px;
+    height: auto;
+    /* overflow: hidden; */
+}
+
+
+.BCimage3 {
+  width: 1000px;
+  height: 1000px;
+}
+
+
+.BCimage1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+  }
+
+  .center {
+    margin: auto;
+    width: 50%;
+    /* border: 3px solid green; */
+    padding: 10px;
+  }
+
+  .textcenter{
+      text-align: center;
+  }
+
+  .textright {
+    text-align: right;
+  }
+
+  .textleft {
+    text-align: left;
+  }
+
+  .texttop{
+      text-align: top;
+  }
+
+  .imagetitle{
+      text-align: center;
+      background-color: gold;
+      color: green;
+      font-style: italic;
+  }
+
+  .backgroundorange{
+    background-color: #fa7002;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .container:hover .image {
+    opacity: 0.8;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+  }
+
+  .point {
+    width: 6px;
+    height: 6px;
+    background: rgb(228, 48, 17);
+    transition: width 1s ease;
+  }
+  
+  .point:hover {
+    width: 200px;
+  }
+
+  /* .animation {
+    height:0px;
+    width:1000px;
+    border-bottom:1.5px solid gold;
+    
+    -webkit-animation: increase 3s;
+    -moz-animation:    increase 3s; 
+    -o-animation:      increase 3s; 
+    animation:         increase 3s; 
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes increase {
+      100% {
+          width: 700px;
+      }
+  }
+
+
+   */
+  
