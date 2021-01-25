@@ -316,6 +316,8 @@ h1, h2 {
   overflow: hidden;
 }
 
+
+
 .designs .allways .card {
   margin-top: 20px;
 
@@ -1187,4 +1189,278 @@ transition: transform 0.2s ease-in;
 
 
    */
+
+   /* Tablets and Under */
+
+   @media(max-width: 768px) {
+     .grid,
+     .designs .allways .grid,
+     .designs .insane .grid, 
+     .designs .weandi .grid, 
+     .designs .balehager .grid,
+     .designs .eshi .grid, 
+     .designs .lunion .grid, 
+     .designs .mamaye .grid, 
+     .designs .Radoriginal .grid, 
+     .designs .radroot .grid {
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr;
+       overflow: hidden;
+     }
+
+
+     /* Always */
+     .designs .allways .grid .newcard {
+       overflow: show;
+     }
+     .designs .allways img {
+      width: 850px;
+      height: auto;
+      overflow: hidden;
+     }
+
+     /* Insane */
+
+     .designs .insane .grid .newcard {
+      overflow: show;
+     }
+
+     .designs .insane .container .alwayscontainer {
+       height: 200px;
+       overflow: hidden;
+       margin-top: 100px;
+     }
+
+     .designs .insane .container .newcard {
+      margin-top: -10px;
+    }
+
+
+     .designs .insane .grid {
+      grid-template-rows: 60% 40%;
+      overflow: hidden;
+    }
+
+     .designs .insane .container .alwayscontainer img {
+      width: auto;
+      height: 390px;
+      overflow: hidden;
+      margin-top: -145px;
+      margin-left: -110px;
+      margin-right: 00px;
+     }
+
+     /* We and I */
+    .designs .weandi .grid .newcard {
+      height: 100%;
+      overflow: show;
+    }
+
+
+
+    .designs .weandi .grid .alwayscontainer {
+      overflow: hidden;
+      height: 300px;
+    }
+    
+  
+    .designs .weandi .container .alwayscontainer img {
+      margin-top: -80px;
+      margin-left: -10px;
+      margin-bottom: 0px;
+      overflow: hidden;
+      height: 475px;
+      width: auto;
+    }
+
+    .designs .weandi .grid {
+      grid-template-rows: 30% 70%;
+      overflow: hidden;
+    }
+
+    /* Bale Hager */
+
+    .designs .balehager .grid .newcard {
+      margin-top: -120px;
+      height: 100%;
+      overflow: show;
+     }
+
+     .designs .balehager .container .alwayscontainer {
+       height: 200px;
+       overflow: hidden;
+       /* margin-top: */
+     }
+
+
+     .designs .balehager .grid {
+      grid-template-rows: 60% 40%;
+      overflow: hidden;
+    }
+
+     .designs .balehager .container .alwayscontainer img {
+      width: auto;
+      height: 390px;
+      overflow: hidden;
+      margin-top: -85px;
+      margin-left: -150px;
+      margin-right: 00px;
+     }
+
+     /* Eshi  */
+
+     .designs .eshi .container {
+       height: 600px;
+     }
+     .designs .eshi .grid .newcard {
+      height: 100%;
+      overflow: show;
+    }
+
+
+
+    .designs .eshi .grid .alwayscontainer {
+      overflow: show;
+      height: 300px;
+    }
+    
+  
+    .designs .eshi .container .alwayscontainer img {
+      margin-top: -30px;
+      margin-left: -65px;
+      margin-bottom: 0px;
+      overflow: hidden;
+      height: 350px;
+      width: auto;
+    }
+
+    .designs .eshi .grid {
+      grid-template-rows: 30% 70%;
+      overflow: hidden;
+    }
+
+    /* L'union */
+
+    .designs .lunion .container .alwayscontainer img {
+      margin-top: 30px;
+      margin-left: -85px;
+      margin-bottom: 0px;
+      overflow: hidden;
+      height: 350px;
+      width: auto;
+    }
+
+    /* Mamaye */
+
+    .designs .mamaye .grid .newcard {
+      margin-top: -120px;
+      width: 400px;
+      height: 100%;
+      margin-left: 90px;
+
+      overflow: show;
+     }
+
+     .designs .mamaye .grid .alwayscontainer {
+       height: 350px;
+       overflow: show;
+       /* margin-top: */
+     }
+
+
+     .designs .mamaye .grid {
+      grid-template-rows: 70% 30%;
+      overflow: show;
+    }
+
+     .designs .mamaye .container .alwayscontainer img {
+      width: auto;
+      height: 400px;
+      overflow: show;
+      margin-top: -45px;
+      margin-left: -60px;
+      margin-right: 00px;
+     }
+
+     /* Radical Original */
+
+    .designs .Radoriginal .grid .newcard {
+      height: 100px;
+      overflow: show;
+      margin-top: -70px;
+    }
+
+
+
+    .designs .Radoriginal .grid .alwayscontainer {
+      overflow: hidden;
+      height: 250px;
+    }
+    
+  
+    .designs .Radoriginal .container .alwayscontainer img {
+      margin-top: -140px;
+      margin-left: -195px;
+      margin-bottom: 0px;
+      overflow: hidden;
+      height: 475px;
+      width: auto;
+    }
+
+    .designs .Radoriginal .grid {
+      grid-template-rows: 40% 60%;
+      overflow: hidden;
+    }
+
+    
+    /* .designs .container .alwayscontainer img {
+      margin-top: -15px;
+      margin-left: -200px;
+      margin-right: -200px;
+    } */
+    
+   }
+
+   /* .designs .insane .grid, 
+     .designs .weandi .grid, 
+     .designs .balehager .grid,
+     .designs .eshi .grid, 
+     .designs .lunion .grid, 
+     .designs .mamaye .grid, 
+     .designs .Radoriginal .grid, 
+     .designs .radroot .grid */
+
+
+   /* Mobile and under */
+
+   @media(max-width: 500px) {
+     .navbar {
+       height: 80px;
+     }
+
+     .navbar .flex {
+       flex-direction: column;
+       overflow: hidden;
+     }
+
+     .navbar h1 {
+      padding: 10px;
+      margin: 5px 0 0 0;
+
+    }
+
+     .navbar a {
+      padding: 10px;
+      margin: 0 0 15px 0;
+
+    }
+
+    .navbar ul {
+      padding: 5px 5px, 5px, 5px;
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+    
+  }
+
   
